@@ -3,7 +3,7 @@ import useFetch from "./useFetch";
 
 const BlogDetails = () => {
   const { id } = useParams();
-  const { data: blog, error, isPending } = useFetch('http://localhost:8000/blogs/' + id);
+  const { data: blog, error, isPending } = useFetch('http://https://fake-serv-blog.herokuapp.com/' + id);
   const history = useHistory();
 
   const handleClick = () => {
